@@ -10,9 +10,11 @@ function about() {
 
         <>
 
-            <About />
+            <div className="mt-16">
+                <About />
+            </div>
             <FAQ />
-            <Contact/>
+            <Contact />
 
         </>
 

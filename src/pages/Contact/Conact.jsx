@@ -3,7 +3,12 @@ import Contact from '../../components/Contact'
 
 function Conact() {
   return (
-   <Contact/>
+
+    <div className="mt-28">
+      <Contact />
+    </div>
+
+
   )
 }
 

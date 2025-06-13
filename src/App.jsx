@@ -16,18 +16,19 @@ import AboutPage from './pages/About/about.jsx';
 import Service from './pages/Service/Service.jsx'
 import Contact from './pages/Contact/Conact.jsx';
 import Gallery from './pages/Gallery/Gallery.jsx';
-import AllItems from './pages/Product/Product.jsx'; // Product page jahan products list hoti hai
+import AllItems from './pages/Product/Product.jsx';
 
 
 
-import ProductDetail from './components/ProductDetails.jsx'; // Naya component, product detail ke liye
+import ProductDetail from './components/ProductDetails.jsx';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <TopNavbar />
+        {/* <TopNavbar /> */}
       <Navbar />
+ 
 
       <Routes>
         {/* Home page route jahan saare sections hain */}
@@ -36,19 +37,20 @@ function App() {
           element={
             <>
               <Hero />
+              <BannerSection />
               <About />
               <Products />
               <ColorPalettes />
               <Projects />
               <Testimonial />
-              <BannerSection />
+             
               <FAQ />
-              <Contact/>
+              <Contact />
             </>
           }
         />
 
-    
+
         <Route path="/" element={<Products />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/AllItems" element={<AllItems />} />

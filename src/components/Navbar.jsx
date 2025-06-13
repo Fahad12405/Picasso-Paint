@@ -65,51 +65,36 @@ const MainNavbar = () => {
   ];
 
   return (
-    <nav className="w-full bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="flex-shrink-0">
-          <img src={avatarAli} alt="Logo" className="h-14 w-auto" />
-        </Link>
+    <nav className="w-full bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      {/* Logo */}
+      <Link to="/" className="flex-shrink-0">
+        <img src={avatarAli} alt="Logo" className="h-14 w-auto" />
+      </Link>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 items-center font-medium text-gray-700">
-          {navItems.map((item) => (
-            <li key={item.path}>
-              <Link
-                to={item.path}
-                className={`hover:text-teal-500 transition-colors ${isActive(item.path, item.exact) ? 'text-teal-500 font-semibold' : ''}`}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-
-          {productItems.map((product) => (
-            <li key={product.path}>
-              <Link
-                to={product.path}
-                className={`hover:text-teal-500 transition-colors ${isActive(product.path) ? 'text-teal-500 font-semibold' : ''}`}
-              >
-                {product.label}
-              </Link>
-            </li>
-          ))}
-
-          <li>
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Search"
-              onClick={() => setIsSearchDialogOpen(true)}
-              className="flex items-center border rounded-md p-2 hover:bg-gray-50"
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex gap-6 items-center font-medium text-gray-700">
+        {navItems.map((item) => (
+          <li key={item.path}>
+            <Link
+              to={item.path}
+              className={`hover:text-teal-500 transition-colors ${isActive(item.path, item.exact) ? 'text-teal-500 font-semibold' : ''}`}
             >
-              <Search className="h-5 w-5 text-gray-600" />
-            </Button>
+              {item.label}
+            </Link>
           </li>
-        </ul>
-
-        {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center gap-3">
+        ))}
+        {productItems.map((product) => (
+          <li key={product.path}>
+            <Link
+              to={product.path}
+              className={`hover:text-teal-500 transition-colors ${isActive(product.path) ? 'text-teal-500 font-semibold' : ''}`}
+            >
+              {product.label}
+            </Link>
+          </li>
+        ))}
+        <li>
           <Button
             variant="ghost"
             size="icon"
@@ -119,45 +104,62 @@ const MainNavbar = () => {
           >
             <Search className="h-5 w-5 text-gray-600" />
           </Button>
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 focus:outline-none"
-          >
-            {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
-          </button>
-        </div>
+        </li>
+      </ul>
+
+      {/* Mobile Toggle */}
+      <div className="md:hidden ml-auto flex items-center gap-3">
+        <Button
+          variant="ghost"
+          size="icon"
+          aria-label="Search"
+          onClick={() => setIsSearchDialogOpen(true)}
+          className="flex items-center border rounded-md p-2 hover:bg-gray-50"
+        >
+          <Search className="h-5 w-5 text-gray-600" />
+        </Button>
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="p-2 focus:outline-none text-gray-800"
+        >
+          {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+        </button>
       </div>
+    </div>
 
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 shadow-lg">
-          <ul className="flex flex-col gap-3 text-gray-700 font-medium">
-            {[...navItems, ...productItems].map((item) => (
-              <li key={item.path}>
-                <Link
-                  to={item.path}
-                  className={`block py-2 px-2 rounded hover:bg-gray-50 ${isActive(item.path, item.exact) ? 'text-teal-500 font-semibold' : ''}`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+    {/* Mobile Menu */}
+    {mobileMenuOpen && (
+      <div className="md:hidden bg-white px-4 pb-4 shadow-lg">
+        <ul className="flex flex-col gap-3 text-gray-700 font-medium">
+          {[...navItems, ...productItems].map((item) => (
+            <li key={item.path}>
+              <Link
+                to={item.path}
+                className={`block py-2 px-2 rounded hover:bg-gray-50 ${
+                  isActive(item.path, item.exact) ? 'text-teal-500 font-semibold' : ''
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
 
-      <SearchDialogBox
-        isOpen={isSearchDialogOpen}
-        setIsOpen={setIsSearchDialogOpen}
-        title="Search Products"
-        placeholder="Search products..."
-        filteredData={filteredProducts}
-        onSearchQueryChange={setSearchQuery}
-        searchQuery={searchQuery}
-        loading={isLoading}
-      />
-    </nav>
+    {/* Search Dialog */}
+    <SearchDialogBox
+      isOpen={isSearchDialogOpen}
+      setIsOpen={setIsSearchDialogOpen}
+      title="Search Products"
+      placeholder="Search products..."
+      filteredData={filteredProducts}
+      onSearchQueryChange={setSearchQuery}
+      searchQuery={searchQuery}
+      loading={isLoading}
+    />
+  </nav>
   );
 };
 

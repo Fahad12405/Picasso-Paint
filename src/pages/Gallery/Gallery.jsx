@@ -5,11 +5,14 @@ import Contact from '../../components/Contact'
 
 function Gallery() {
   return (
-   <>
-   
-   <Projects/>
-   <Contact/>
-   </>
+    <>
+      <div className="mt-28">
+        <Projects />
+
+      </div>
+
+      <Contact />
+    </>
   )
 }
 

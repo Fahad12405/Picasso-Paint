@@ -6,12 +6,15 @@ import Contact from '../../components/Contact'
 
 const Services = () => {
   return (
-<>
+    <>
+      <div className="mt-16">
+        <Service />
 
-<Service/>
-<Projects/>
-<Contact/>
-</>
+      </div>
+
+      <Projects />
+      <Contact />
+    </>
   );
 };
 

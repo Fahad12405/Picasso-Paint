@@ -11,7 +11,7 @@ const reviews = [
   {
     id: 1,
     name: "Ali Khan",
-    image: Costumer1,
+    image: "https://live.staticflickr.com/5325/9053039024_832e686708_b.jpg",
     stars: 5,
     content:
       "I have been using this product for over six months now, and I am truly impressed by the quality and performance. From the moment I placed the order, the customer service team was very responsive and helpful, answering all my questions promptly. The product itself exceeded my expectations in terms of durability and ease of use. It has made my daily tasks much easier and more enjoyable. I highly recommend this to anyone looking for a reliable and high-quality solution. I will definitely be purchasing from this brand again in the future!",
@@ -19,7 +19,7 @@ const reviews = [
   {
     id: 2,
     name: "Sara Ahmed",
-    image: Costumer2,
+    image: "https://i.pinimg.com/736x/93/1f/6d/931f6d92104130d0775a33a6e85ded65.jpg",
     stars: 4,
     content:
       "Overall, I had a very positive experience with this company. The delivery process was smooth and quick, arriving earlier than expected. The packaging was secure, and the product looked exactly as described on the website. The only minor downside was that the instructions could have been a bit clearer, but I managed to figure things out with a little trial and error. The product performs well and meets my needs perfectly. I’m satisfied with my purchase and would consider buying other products from this brand.",
@@ -27,7 +27,7 @@ const reviews = [
   {
     id: 3,
     name: "Zain Malik",
-    image: Costumer3,
+    image: "https://iimk.ac.in/uploads/admission_application/medium/PhD(PT)0310IS.jpg",
     stars: 5,
     content:
       "From start to finish, my experience with this company was exceptional. The attention to detail in the product design is evident, and the quality is unmatched. I especially appreciate how the company values customer feedback and continuously improves their offerings. The product works flawlessly, and the after-sales support was very helpful when I had a question about usage. This level of professionalism and dedication to customer satisfaction is rare these days. I wholeheartedly recommend this product to anyone looking for something dependable and well-crafted.",
