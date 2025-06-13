@@ -75,7 +75,7 @@ export default function HeroSection() {
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img src={img2} alt="Picasso Paint - Kent" className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-gray-700">
-                  Picasso Paint - Kent
+                  Picasso  - Kent
                 </div>
               </Link>
 
@@ -83,7 +83,7 @@ export default function HeroSection() {
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img src={img3} alt="Picasso Paint - Evernew" className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-gray-700">
-                  Picasso Paint - Evernew
+                  Picasso  - Evernew
                 </div>
               </Link>
 
