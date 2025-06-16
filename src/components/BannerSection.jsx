@@ -21,7 +21,7 @@ const BannerSection = () => {
           data-aos-delay="100"
         >
           <Link 
-          to="/Allitems" className="block">
+          to="/Allitems?category=EVERNEW" className="block">
             <img
               src={banner1}
               alt="Picasso Paint Evernew"
@@ -35,9 +35,9 @@ const BannerSection = () => {
                 </p>
               </div>
             </div>
-            <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
+            {/* <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
               New
-            </div>
+            </div> */}
           </Link>
         </div>
 
@@ -48,7 +48,7 @@ const BannerSection = () => {
           data-aos-delay="300"
         >
           <Link
-           to="/Allitems" className="block">
+           to="/Allitems?category=KENT" className="block">
             <img
               src={banner4}
               alt="Picasso Paint Kent"
@@ -62,9 +62,9 @@ const BannerSection = () => {
                 </p>
               </div>
             </div>
-            <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+            {/* <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
               Best Seller
-            </div>
+            </div> */}
           </Link>
         </div>
       </div>

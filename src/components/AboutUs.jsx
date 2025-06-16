@@ -14,7 +14,7 @@ const AboutUs = () => {
         <div className="mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2 items-start">
           <div className="lg:pr-6" data-aos="fade-right">
             <div className="lg:max-w-xl">
-              <h2 className="text-sm font-semibold text-teal-500">About Us</h2>
+              <h2 className="text-sm font-semibold text-[#BB2429]">About Us</h2>
               <p className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">
                 Picasso Paints – Company Profile
               </p>
@@ -31,7 +31,7 @@ const AboutUs = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      className="absolute left-0 top-0 h-5 w-5 text-teal-400"
+                      className="absolute left-0 top-0 h-5 w-5 text-[#BB2429]"
                     >
                       <path d="M3 3h14v14H3V3z" />
                     </svg>
@@ -47,7 +47,7 @@ const AboutUs = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      className="absolute left-0 top-0 h-5 w-5 text-teal-400"
+                      className="absolute left-0 top-0 h-5 w-5 text-[#BB2429]"
                     >
                       <path d="M4 3h12v2H4zM4 7h12v2H4zM4 11h8v2H4z" />
                     </svg>
@@ -55,14 +55,14 @@ const AboutUs = () => {
                   </dt>
                   <dd className="ml-1">Evernew-Paints & Varnish, Kent-Paints</dd>
                 </div>
-                
+
                 <div className="relative pl-8">
                   <dt className="font-semibold text-gray-900">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      className="absolute left-0 top-0 h-5 w-5 text-teal-400"
+                      className="absolute left-0 top-0 h-5 w-5 text-[#BB2429]"
                     >
                       <path d="M5 4h10v2H5V4zm0 4h10v2H5V8zm0 4h6v2H5v-2z" />
                     </svg>
@@ -76,7 +76,7 @@ const AboutUs = () => {
               <div className="mt-6 flex gap-4">
                 <a
                   href="/Allitems"
-                  className="rounded-md bg-teal-500 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-600"
+                  className="rounded-md bg-[#BB2429] hover:bg-[#ff6369] px-4 py-2 text-sm font-semibold text-white "
                 >
                   Explore Products
                 </a>
@@ -88,15 +88,15 @@ const AboutUs = () => {
           </div>
 
           <div
-  className="w-full max-w-sm sm:max-w-sm md:max-w-sm lg:max-w-xs xl:max-w-sm mx-auto"
-  data-aos="fade-left"
->
-  <img
-    src={Aboutimg}
-    alt="Factory Overview"
-    className="rounded-xl shadow-md ring-1 ring-gray-200 w-full h-[500px] object-cover"
-  />
-</div>
+            className="w-full max-w-sm sm:max-w-sm md:max-w-sm lg:max-w-xs xl:max-w-sm mx-auto"
+            data-aos="fade-left"
+          >
+            <img
+              src={Aboutimg}
+              alt="Factory Overview"
+              className="rounded-xl shadow-md ring-1 ring-gray-200 w-full h-[500px] object-cover"
+            />
+          </div>
 
         </div>
       </div>

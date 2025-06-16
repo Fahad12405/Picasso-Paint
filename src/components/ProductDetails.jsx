@@ -28,7 +28,7 @@ const ProductDetail = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-16 py-20">
-      <button className="mb-8 px-4 py-2 rounded" onClick={() => navigate("/")}>
+      <button className="mb-8 px-4 py-2 pt-10 rounded" onClick={() => navigate("/")}>
         ← Back to Products
       </button>
 

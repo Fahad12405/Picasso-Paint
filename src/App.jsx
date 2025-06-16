@@ -21,17 +21,21 @@ import AllItems from './pages/Product/Product.jsx';
 
 
 import ProductDetail from './components/ProductDetails.jsx';
+import ScrollToTop from './utils/ScrollToTop';
 
 
 function App() {
   return (
     <BrowserRouter>
-        {/* <TopNavbar /> */}
+      {/* <TopNavbar /> */}
       <Navbar />
- 
 
+
+        <ScrollToTop />
       <Routes>
         {/* Home page route jahan saare sections hain */}
+
+
         <Route
           path="/"
           element={
@@ -43,7 +47,7 @@ function App() {
               <ColorPalettes />
               <Projects />
               <Testimonial />
-             
+
               <FAQ />
               <Contact />
             </>

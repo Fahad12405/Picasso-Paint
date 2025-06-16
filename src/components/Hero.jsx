@@ -52,10 +52,10 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="800">
-              <button className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
+              <Link to="/AllItems" className="bg-[#BB2429] hover:bg-[#ff6369] text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
                 Shop Premium Colors
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
               <button className="border-2 border-gray-300 hover:border-gray-400 text-gray-700 px-8 py-4 rounded-lg font-semibold transition-colors">
                 Explore Collections
               </button>
