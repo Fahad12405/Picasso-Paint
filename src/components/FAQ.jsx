@@ -4,7 +4,7 @@ import React from 'react'
 function FAQ() {
   return (
     <section className="bg-white">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div className="py-0 px-4 mx-auto max-w-screen-xl sm:py-2 lg:px-6">
         <h2 className="mb-8 text-4xl font-bold text-gray-900 text-center">
           Ask From Us
         </h2>

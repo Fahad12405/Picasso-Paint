@@ -15,7 +15,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="relative w-full bg-gradient-to-br from-orange-50 to-pink-50 px-4 py-8 lg:py-28 overflow-hidden">
+    <div className="relative w-full bg-gradient-to-br from-orange-50 to-pink-50 px-4 py-28   lg:py-28 overflow-hidden">
       {/* <div className="absolute inset-0 z-0">
       <img
         src="https://t3.ftcdn.net/jpg/08/55/97/54/360_F_855975460_3tWtkutUoeGsEMTQwkaB8tfyxtQxSNHt.jpg"
@@ -75,15 +75,15 @@ export default function HeroSection() {
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img src={img2} alt="Picasso Paint - Kent" className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-gray-700">
-                  Picasso  - Kent
+                  Kent
                 </div>
               </Link>
 
               {/* Image 3 */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img src={img3} alt="Picasso Paint - Evernew" className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-gray-700">
-                  Picasso  - Evernew
+                <div className="absolute bottom-10 left-4 bg-white/90 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-medium text-gray-700">
+                  Evernew
                 </div>
               </Link>
 

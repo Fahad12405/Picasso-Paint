@@ -69,16 +69,22 @@ const MainNavbar = () => {
     <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       {/* Logo */}
       <Link to="/" className="flex-shrink-0">
-        <img src={avatarAli} alt="Logo" className="h-14 w-auto" />
+        <img
+          src={avatarAli}
+          alt="Logo"
+          className="h-16 w-52 md:h-16 md:w-96 object-contain transition-all duration-300"
+        />
       </Link>
-
+  
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 items-center font-medium text-gray-700">
         {navItems.map((item) => (
           <li key={item.path}>
             <Link
               to={item.path}
-              className={`hover:text-teal-500 transition-colors ${isActive(item.path, item.exact) ? 'text-teal-500 font-semibold' : ''}`}
+              className={`hover:text-red-800 transition-colors ${
+                isActive(item.path, item.exact) ? 'text-red-800 font-semibold' : ''
+              }`}
             >
               {item.label}
             </Link>
@@ -88,7 +94,9 @@ const MainNavbar = () => {
           <li key={product.path}>
             <Link
               to={product.path}
-              className={`hover:text-teal-500 transition-colors ${isActive(product.path) ? 'text-teal-500 font-semibold' : ''}`}
+              className={`hover:text-red-800 transition-colors ${
+                isActive(product.path) ? 'text-red-800 font-semibold' : ''
+              }`}
             >
               {product.label}
             </Link>
@@ -106,7 +114,7 @@ const MainNavbar = () => {
           </Button>
         </li>
       </ul>
-
+  
       {/* Mobile Toggle */}
       <div className="md:hidden ml-auto flex items-center gap-3">
         <Button
@@ -126,7 +134,7 @@ const MainNavbar = () => {
         </button>
       </div>
     </div>
-
+  
     {/* Mobile Menu */}
     {mobileMenuOpen && (
       <div className="md:hidden bg-white px-4 pb-4 shadow-lg">
@@ -135,8 +143,8 @@ const MainNavbar = () => {
             <li key={item.path}>
               <Link
                 to={item.path}
-                className={`block py-2 px-2 rounded hover:bg-gray-50 ${
-                  isActive(item.path, item.exact) ? 'text-teal-500 font-semibold' : ''
+                className={`block py-2 px-2 rounded hover:text-red-800 hover:bg-gray-50 ${
+                  isActive(item.path, item.exact) ? 'text-red-800 font-semibold' : ''
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -147,7 +155,7 @@ const MainNavbar = () => {
         </ul>
       </div>
     )}
-
+  
     {/* Search Dialog */}
     <SearchDialogBox
       isOpen={isSearchDialogOpen}
@@ -160,6 +168,7 @@ const MainNavbar = () => {
       loading={isLoading}
     />
   </nav>
+  
   );
 };
 

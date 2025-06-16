@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -6,10 +7,15 @@ import { colorPalettes } from "../constant/colors.js";
 
 const ColorPalette = () => {
   const [selected, setSelected] = useState('KENT');
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
+
+  const handleClick = (id) => {
+    navigate(`/product/${id}`);
+  };
 
   return (
     <section className="py-24 bg-white text-center">
@@ -46,7 +52,8 @@ const ColorPalette = () => {
           {colorPalettes[selected].map((color, index) => (
             <div
               key={index}
-              className="flex flex-col items-center group transition-transform duration-300 ease-in-out transform hover:scale-105"
+              onClick={() => handleClick(index)} // 👈 Use index or fixed string
+              className="flex flex-col items-center group cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
               <div
                 className="w-[90px] h-[90px] rounded-full transition duration-300 shadow-sm"

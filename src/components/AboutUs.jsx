@@ -9,7 +9,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden bg-white py-6 sm:py-24">
+    <section className="overflow-hidden bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2 items-start">
           <div className="lg:pr-6" data-aos="fade-right">
