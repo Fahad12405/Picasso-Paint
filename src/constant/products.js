@@ -10,6 +10,7 @@ import Product9 from "../assets/Kent Gallon/Matt Enamel.jpg";
 import Product10 from "../assets/Kent Gallon/Red Oxide.jpg";
 import Product11 from "../assets/Kent Gallon/Wall Primer.jpg";
 import Product12 from "../assets/Kent Gallon/Weather Care.jpg";
+import Product13 from "../assets/Evernew Gallon/Weather Care.jpg";
 
 export const products = [
   {
@@ -107,6 +108,14 @@ export const products = [
     description:
       "Weather Care is a high-performance exterior paint that resists harsh weather, UV rays, and dirt. Keeps your walls protected and vibrant year-round.",
     image: Product12,
+  },
+  {
+    id: 13,
+    name: "Weather Care",
+    category: "EVERNEW",
+    description:
+      "Weather Care is a high-performance exterior paint that resists harsh weather, UV rays, and dirt. Keeps your walls protected and vibrant year-round.",
+    image: Product13,
   },
 ];
 

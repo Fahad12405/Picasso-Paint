@@ -4,10 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from 'react-router-dom'; // Make sure this is imported
 
-import img1 from '../assets/Kent Gallon/Gloss_Enamel.png';
+import img1 from '../assets/hero1.jpg';
 import img2 from '../assets/hero2.jpg';
 import img3 from '../assets/hero3.jpg';
-import img4 from '../assets/Evernew Gallon/Emulsion.png';
+import img4 from '../assets/hero4.jpg';
 
 export default function HeroSection() {
   useEffect(() => {
@@ -67,30 +67,54 @@ export default function HeroSection() {
             <div className="grid grid-cols-2 gap-4 lg:gap-6">
 
               {/* Image 1 */}
+              {/* Image 1 - Decorative Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
-                <img src={img1} alt="Kent Product" className="w-full h-48 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
-              </Link>
-
-              {/* Image 2 */}
-              <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
-                <img src={img2} alt="Picasso Paint - Kent" className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-gray-700">
-                  Kent
+                <img
+                  src={img1}
+                  alt="Decorative Paints"
+                  className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                  Decorative Paints
                 </div>
               </Link>
 
-              {/* Image 3 */}
+              {/* Image 2 - Toplac Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
-                <img src={img3} alt="Picasso Paint - Evernew" className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
-                <div className="absolute bottom-10 left-4 bg-white/90 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-medium text-gray-700">
-                  Evernew
+                <img
+                  src={img2}
+                  alt="Toplac Paints"
+                  className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                  Toplac Paints
                 </div>
               </Link>
 
-              {/* Image 4 */}
+              {/* Image 3 - Ink Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
-                <img src={img4} alt="Professional Tools" className="w-full h-56 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img
+                  src={img3}
+                  alt="Ink Paints"
+                  className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                  Ink Paints
+                </div>
               </Link>
+
+              {/* Image 4 - Industrial Paints */}
+              <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
+                <img
+                  src={img4}
+                  alt="Industrial Paints"
+                  className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                  Industrial Paints
+                </div>
+              </Link>
+
             </div>
           </div>
         </div>

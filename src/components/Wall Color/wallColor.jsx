@@ -1371,136 +1371,146 @@ import { Card } from "@/components/ui/card"
 import Sofa from "@/assets/sofa.png" // Replace with your actual sofa PNG path
 
 const colors = [
-    { name: "Pale Peach", hex: "#F5D5AE" },
-    { name: "Light Pink", hex: "#F8E8E8" },
-    { name: "Light Gray", hex: "#E5E5E5" },
-    { name: "Pale Yellow", hex: "#F5F5DC" },
-    { name: "Cream", hex: "#F5F5DC" },
-    { name: "Beige", hex: "#D2B48C" },
-    { name: "Off White", hex: "#FAF0E6" },
-    { name: "Light Lavender", hex: "#E6E6FA" },
-    { name: "Pale Blue", hex: "#B0E0E6" },
-    { name: "Light Green", hex: "#F0FFF0" },
-    { name: "Peach", hex: "#FFCBA4" },
-    { name: "Light Brown", hex: "#D2B48C" },
-    { name: "Powder Blue", hex: "#B0E0E6" },
-    { name: "Mint Green", hex: "#F5FFFA" },
-    { name: "Light Orange", hex: "#FFE4B5" },
-    { name: "Rose", hex: "#FFE4E1" },
-    { name: "Pale Green", hex: "#98FB98" },
-    { name: "Light Coral", hex: "#F08080" },
-    { name: "Sky Blue", hex: "#87CEEB" },
-    { name: "Lavender", hex: "#E6E6FA" },
-    { name: "Light Yellow", hex: "#FFFFE0" },
-    { name: "Pale Orange", hex: "#FFEFD5" },
-    { name: "Light Cyan", hex: "#E0FFFF" },
-    { name: "Pale Pink", hex: "#FFE4E1" },
-    { name: "Sage Green", hex: "#9CAF88" },
-    { name: "Bright Yellow", hex: "#FFFF00" },
-    { name: "Turquoise", hex: "#40E0D0" },
-    { name: "Forest Green", hex: "#228B22" },
-    { name: "Light Blue", hex: "#ADD8E6" },
-    { name: "Violet", hex: "#8A2BE2" },
-    { name: "Olive", hex: "#808000" },
-    { name: "Navy Blue", hex: "#000080" },
-    { name: "Purple", hex: "#800080" },
-    { name: "Maroon", hex: "#800000" },
-    { name: "Black", hex: "#000000" },
-]
+  { name: "Pale Peach", hex: "#F5D5AE" },
+  { name: "Light Pink", hex: "#F8E8E8" },
+  { name: "Light Gray", hex: "#E5E5E5" },
+  { name: "Pale Yellow", hex: "#F5F5DC" },
+  { name: "Cream", hex: "#F5F5DC" },
+  { name: "Beige", hex: "#D2B48C" },
+  { name: "Off White", hex: "#FAF0E6" },
+  { name: "Light Lavender", hex: "#E6E6FA" },
+  { name: "Pale Blue", hex: "#B0E0E6" },
+  { name: "Light Green", hex: "#F0FFF0" },
+  { name: "Peach", hex: "#FFCBA4" },
+  { name: "Light Brown", hex: "#D2B48C" },
+  { name: "Powder Blue", hex: "#B0E0E6" },
+  { name: "Mint Green", hex: "#F5FFFA" },
+  { name: "Light Orange", hex: "#FFE4B5" },
+  { name: "Rose", hex: "#FFE4E1" },
+  { name: "Pale Green", hex: "#98FB98" },
+  { name: "Light Coral", hex: "#F08080" },
+  { name: "Sky Blue", hex: "#87CEEB" },
+  { name: "Lavender", hex: "#E6E6FA" },
+  { name: "Light Yellow", hex: "#FFFFE0" },
+  { name: "Pale Orange", hex: "#FFEFD5" },
+  { name: "Light Cyan", hex: "#E0FFFF" },
+  { name: "Pale Pink", hex: "#FFE4E1" },
+  { name: "Sage Green", hex: "#9CAF88" },
+  { name: "Bright Yellow", hex: "#FFFF00" },
+  { name: "Turquoise", hex: "#40E0D0" },
+  { name: "Forest Green", hex: "#228B22" },
+  { name: "Light Blue", hex: "#ADD8E6" },
+  { name: "Violet", hex: "#8A2BE2" },
+  { name: "Olive", hex: "#808000" },
+  { name: "Navy Blue", hex: "#000080" },
+  { name: "Purple", hex: "#800080" },
+  { name: "Maroon", hex: "#800000" },
+  { name: "Black", hex: "#000000" },
+
+  // ✅ New light wall-friendly shades
+  { name: "Almond White", hex: "#F4F1EE" },
+  { name: "Dusty Rose", hex: "#EED5D2" },
+  { name: "Linen", hex: "#FAF0E6" },
+  { name: "Blush Beige", hex: "#F2D7C9" },
+  { name: "Cloud Gray", hex: "#D6D6D6" }
+];
+
 
 export default function Component() {
-    const [selectedColor, setSelectedColor] = useState(colors[3]) // Pale Yellow
+  const [selectedColor, setSelectedColor] = useState(colors[3]) // Pale Yellow
 
-    return (
-        <div className="min-h-screen bg-gradient-to-br from-white  to-white rounded-xl">
-          <div className="max-w-7xl mx-auto px-4 py-10 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              {/* Left side – Wall Preview */}
-              <div className="w-full">
-                <Card className="overflow-hidden shadow-2xl rounded-2xl border border-gray-200 transition duration-500 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
-                  <div
-                    className="relative aspect-[4/3] bg-white rounded-lg"
-                    style={{ backgroundColor: selectedColor.hex }}
-                  >
-                    {/* Sofa image */}
-                    <img
-                      src={Sofa}
-                      alt="Sofa"
-                      className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[70%] lg:w-[80%] h-auto object-contain pointer-events-none transition-all duration-500 hover:scale-105"
-                    />
-                  </div>
-                </Card>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-white  to-white rounded-xl">
+      <div className="max-w-7xl mx-auto px-4 py-10 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {/* Left side – Wall Preview */}
+          <div className="w-full">
+            <Card className="overflow-hidden shadow-2xl rounded-2xl border border-gray-200 transition duration-500 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+              <div
+                className="relative aspect-[4/3] bg-white rounded-lg"
+                style={{ backgroundColor: selectedColor.hex }}
+              >
+                {/* Sofa image */}
+                <img
+                  src={Sofa}
+                  alt="Sofa"
+                  className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[70%] lg:w-[80%] h-auto object-contain pointer-events-none transition-all duration-500 hover:scale-105"
+                />
               </div>
-      
-              {/* Right side – Product Info */}
-              <div className="space-y-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">🎨 Picasso Paint</h1>
-                    <p className="text-gray-500 text-sm mt-1">Premium Interior Wall Colors</p>
-                  </div>
-                  <Button variant="ghost" size="icon" className="text-pink-600 hover:text-pink-800 transition">
-                    <Heart className="w-6 h-6" />
-                  </Button>
-                </div>
-      
-                {/* Color Selector */}
-                <div className="space-y-5">
-                  <div className="flex items-center gap-4">
-                    <label className="text-sm font-semibold text-gray-900">Selected Shade:</label>
-                    <span className="text-sm text-gray-600">{selectedColor.name}</span>
-                  </div>
-      
-                  <div className="grid grid-cols-6 lg:grid-cols-10 gap-6">
-                    {colors.map((color, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setSelectedColor(color)}
-                        className={`w-9 h-9 rounded-full border-[3px] transition-transform duration-300 hover:scale-110 shadow-md ${
-                          selectedColor.name === color.name
-                            ? "border-gray-900 ring-2 ring-offset-1 ring-gray-300"
-                            : "border-gray-300"
-                        }`}
-                        style={{ backgroundColor: color.hex }}
-                        title={color.name}
-                      />
-                    ))}
-                  </div>
-                  <p className="text-xs text-gray-500 italic">*Actual color may slightly vary from display.</p>
-                </div>
-      
-                {/* Action buttons */}
-                <div className="flex gap-4 pt-6 border-t border-gray-200">
-                  <Button
-                    variant="ghost"
-                    className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition"
-                  >
-                    <HelpCircle className="w-4 h-4" />
-                    Ask a question
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition"
-                  >
-                    <Share2 className="w-4 h-4" />
-                    Share Shade
-                  </Button>
-                </div>
-      
-                {/* Product Features */}
-                <div className="p-4 rounded-xl border border-gray-200 bg-white/70 shadow-sm space-y-2">
-                  <h3 className="font-semibold text-gray-900 text-lg mb-1">✨ Product Features</h3>
-                  <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
-                    <li>Quick wash formula for easy maintenance</li>
-                    <li>Superior coverage and long-lasting durability</li>
-                    <li>Low odor and eco-friendly composition</li>
-                    <li>Perfect for interior walls & ceilings</li>
-                  </ul>
-                </div>
+            </Card>
+          </div>
+
+          {/* Right side – Product Info */}
+          <div className="space-y-6">
+            <div className="flex justify-between items-start">
+              <div>
+                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">🎨 Picasso Paint</h1>
+                <p className="text-gray-500 text-sm mt-1">Premium Interior Wall Colors</p>
               </div>
+              <Button variant="ghost" size="icon" className="text-pink-600 hover:text-pink-800 transition">
+                <Heart className="w-6 h-6" />
+              </Button>
+            </div>
+
+            {/* Color Selector */}
+            <div className="space-y-3">
+  <div className="flex items-center gap-2">
+    <label className="text-sm font-semibold text-gray-900">Selected Shade:</label>
+    <span className="text-sm text-gray-600">{selectedColor.name}</span>
+  </div>
+
+  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+    {colors.map((color, index) => (
+      <button
+        key={index}
+        onClick={() => setSelectedColor(color)}
+        className={`w-full h-10 min-w-[70px] rounded-md border-[2px] transition-all duration-300 hover:scale-[1.02] shadow-sm ${
+          selectedColor.name === color.name
+            ? "border-gray-900 ring-2 ring-offset-1 ring-gray-300"
+            : "border-gray-300"
+        }`}
+        style={{ backgroundColor: color.hex }}
+        title={color.name}
+      />
+    ))}
+  </div>
+
+  <p className="text-xs text-gray-500 italic">*Actual color may slightly vary from display.</p>
+</div>
+
+
+            {/* Action buttons */}
+            <div className="flex gap-4 pt-6 border-t border-gray-200">
+              <Button
+                variant="ghost"
+                className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition"
+              >
+                <HelpCircle className="w-4 h-4" />
+                Ask a question
+              </Button>
+              <Button
+                variant="ghost"
+                className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition"
+              >
+                <Share2 className="w-4 h-4" />
+                Share Shade
+              </Button>
+            </div>
+
+            {/* Product Features */}
+            <div className="p-4 rounded-xl border border-gray-200 bg-white/70 shadow-sm space-y-2">
+              <h3 className="font-semibold text-gray-900 text-lg mb-1">✨ Product Features</h3>
+              <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+                <li>Quick wash formula for easy maintenance</li>
+                <li>Superior coverage and long-lasting durability</li>
+                <li>Low odor and eco-friendly composition</li>
+                <li>Perfect for interior walls & ceilings</li>
+              </ul>
             </div>
           </div>
         </div>
-      )
-      
+      </div>
+    </div>
+  )
+
 }
