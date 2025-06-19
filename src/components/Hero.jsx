@@ -56,9 +56,7 @@ export default function HeroSection() {
                 Shop Premium Colors
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <button className="border-2 border-gray-300 hover:border-gray-400 text-gray-700 px-8 py-4 rounded-lg font-semibold transition-colors">
-                Explore Collections
-              </button>
+           
             </div>
           </div>
 
@@ -66,7 +64,6 @@ export default function HeroSection() {
           <div className="order-2 lg:order-2" data-aos="fade-left" data-aos-delay="400">
             <div className="grid grid-cols-2 gap-4 lg:gap-6">
 
-              {/* Image 1 */}
               {/* Image 1 - Decorative Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img
@@ -74,7 +71,7 @@ export default function HeroSection() {
                   alt="Decorative Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs sm:text-sm font-bold text-gray-800 shadow group-hover:scale-105 transition duration-300">
                   Decorative Paints
                 </div>
               </Link>
@@ -86,7 +83,7 @@ export default function HeroSection() {
                   alt="Toplac Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs sm:text-sm font-bold text-gray-800 shadow group-hover:scale-105 transition duration-300">
                   Toplac Paints
                 </div>
               </Link>
@@ -98,7 +95,7 @@ export default function HeroSection() {
                   alt="Ink Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs sm:text-sm font-bold text-gray-800 shadow group-hover:scale-105 transition duration-300">
                   Ink Paints
                 </div>
               </Link>
@@ -110,13 +107,14 @@ export default function HeroSection() {
                   alt="Industrial Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full text-base md:text-lg font-semibold text-gray-800 shadow-lg transition duration-300 group-hover:scale-105">
+                <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full text-xs sm:text-sm font-bold text-gray-800 shadow group-hover:scale-105 transition duration-300">
                   Industrial Paints
                 </div>
               </Link>
 
             </div>
           </div>
+
         </div>
       </div>
     </div>

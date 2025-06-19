@@ -1412,7 +1412,10 @@ const colors = [
   { name: "Dusty Rose", hex: "#EED5D2" },
   { name: "Linen", hex: "#FAF0E6" },
   { name: "Blush Beige", hex: "#F2D7C9" },
-  { name: "Cloud Gray", hex: "#D6D6D6" }
+  { name: "Cloud Gray", hex: "#D6D6D6" },
+  { name: "Olive Mist", hex: "#C7D3C0" },
+  { name: "Sandstone Beige", hex: "#E8D8C3" }
+
 ];
 
 
@@ -1454,49 +1457,33 @@ export default function Component() {
 
             {/* Color Selector */}
             <div className="space-y-3">
-  <div className="flex items-center gap-2">
-    <label className="text-sm font-semibold text-gray-900">Selected Shade:</label>
-    <span className="text-sm text-gray-600">{selectedColor.name}</span>
-  </div>
+              <div className="flex items-center gap-2">
+                <label className="text-sm font-semibold text-gray-900">Selected Shade:</label>
+                <span className="text-sm text-gray-600">{selectedColor.name}</span>
+              </div>
 
-  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
-    {colors.map((color, index) => (
-      <button
-        key={index}
-        onClick={() => setSelectedColor(color)}
-        className={`w-full h-10 min-w-[70px] rounded-md border-[2px] transition-all duration-300 hover:scale-[1.02] shadow-sm ${
-          selectedColor.name === color.name
-            ? "border-gray-900 ring-2 ring-offset-1 ring-gray-300"
-            : "border-gray-300"
-        }`}
-        style={{ backgroundColor: color.hex }}
-        title={color.name}
-      />
-    ))}
-  </div>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-6">
+                {colors.map((color, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedColor(color)}
+                    className={`w-full h-12 min-w-[80px] rounded-sm border-[2px] transition-all duration-300 hover:scale-[1.02] shadow-sm ${selectedColor.name === color.name
+                      ? "border-gray-900 ring-2 ring-offset-1 ring-gray-300"
+                      : "border-gray-300"
+                      }`}
+                    style={{ backgroundColor: color.hex }}
+                    title={color.name}
+                  />
+                ))}
+              </div>
 
-  <p className="text-xs text-gray-500 italic">*Actual color may slightly vary from display.</p>
-</div>
-
-
-            {/* Action buttons */}
-            <div className="flex gap-4 pt-6 border-t border-gray-200">
-              <Button
-                variant="ghost"
-                className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition"
-              >
-                <HelpCircle className="w-4 h-4" />
-                Ask a question
-              </Button>
-              <Button
-                variant="ghost"
-                className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition"
-              >
-                <Share2 className="w-4 h-4" />
-                Share Shade
-              </Button>
+              <p className="text-xs text-gray-500 italic">*Actual color may slightly vary from display.</p>
             </div>
 
+
+
+
+            {/* Product Features */}
             {/* Product Features */}
             <div className="p-4 rounded-xl border border-gray-200 bg-white/70 shadow-sm space-y-2">
               <h3 className="font-semibold text-gray-900 text-lg mb-1">✨ Product Features</h3>
@@ -1505,8 +1492,14 @@ export default function Component() {
                 <li>Superior coverage and long-lasting durability</li>
                 <li>Low odor and eco-friendly composition</li>
                 <li>Perfect for interior walls & ceilings</li>
+                <li>Provides a smooth, luxurious finish</li>
+                <li>Resistant to stains, fungus, and moisture</li>
+                <li>Dries quickly with minimal downtime</li>
+                <li>Available in a wide range of modern shades</li>
+                <li>Ideal for concrete, plaster, and drywall surfaces</li>
               </ul>
             </div>
+
           </div>
         </div>
       </div>
