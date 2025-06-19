@@ -4,10 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from 'react-router-dom'; // Make sure this is imported
 
-import img1 from '../assets/hero1.jpg';
-import img2 from '../assets/hero2.jpg';
-import img3 from '../assets/hero3.jpg';
-import img4 from '../assets/hero4.jpg';
+import img1 from '../assets/Hero/hero1.jpg';
+import img2 from '../assets/Hero/hero2.jpg';
+import img3 from '../assets/Hero/hero3.jpg';
+import img4 from '../assets/Hero/hero4.jpg';
+import toplac_image from '../assets/Hero/toplac.jpg';
+import ink_image from '../assets/Hero/InkPaint.jpeg';
+import industrila_image from '../assets/Hero/industrailPaint.jpeg';
 
 export default function HeroSection() {
   useEffect(() => {
@@ -56,7 +59,7 @@ export default function HeroSection() {
                 Shop Premium Colors
                 <ArrowRight className="w-5 h-5" />
               </Link>
-           
+
             </div>
           </div>
 
@@ -67,7 +70,7 @@ export default function HeroSection() {
               {/* Image 1 - Decorative Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img
-                  src={img1}
+                  src={img3}
                   alt="Decorative Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -79,7 +82,7 @@ export default function HeroSection() {
               {/* Image 2 - Toplac Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img
-                  src={img2}
+                  src={toplac_image}
                   alt="Toplac Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -91,7 +94,7 @@ export default function HeroSection() {
               {/* Image 3 - Ink Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img
-                  src={img3}
+                  src={ink_image}
                   alt="Ink Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -103,7 +106,7 @@ export default function HeroSection() {
               {/* Image 4 - Industrial Paints */}
               <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
                 <img
-                  src={img4}
+                  src={industrila_image}
                   alt="Industrial Paints"
                   className="w-full h-48 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
