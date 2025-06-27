@@ -1496,7 +1496,7 @@ export default function Component() {
                 <li>Resistant to stains, fungus, and moisture</li>
                 <li>Dries quickly with minimal downtime</li>
                 <li>Available in a wide range of modern shades</li>
-                <li>Ideal for concrete, plaster, and drywall surfaces</li>
+                <li>Ideal for concrete, plaster, and drywall surface</li>
               </ul>
             </div>
 
