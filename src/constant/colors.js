@@ -35,16 +35,58 @@ export const colorOptions = [
 
 
 export const colorPalettes = {
-    KENT: [
-        '#F8F8E5', '#FDF1A9', '#FAD6D6', '#F5EAD7', '#FFFFE0', '#FFF5DC',
-        '#E9F7EF', '#F6DDCC', '#EAECEE' // added
-    ],
-    TOPLAC: [
-        '#D9E4DD', '#CDE7B0', '#F1F5A8', '#FFD8BE', '#E5C1CD', '#C7CEEA',
-        '#D1CFE2', '#F6CED8', '#FFE9D6' // added
-    ],
-    EVERNEW: [
-        '#FFE5B4', '#F2BAC9', '#C5D8A4', '#A9CCE3', '#FAD9D6', '#EAD2AC',
-        '#D7E4F2', '#F9E2AE', '#E0C9A6' // added
-    ],
+  KENT: [
+    '#F5F5DC', // Beige
+    '#EAEAEA', // Light Gray
+    '#F0EAD6', // Off White
+    '#DCDCDC', // Gainsboro
+    '#EFEFEF', // Light Neutral
+    '#F8F4E3', // Eggshell
+    '#E8E4C9', // Pale Sand
+    '#FAF3E0', // Cream
+    '#EDE6DB', // Stone
+    '#D6CEC3', // Soft Taupe
+    '#F4F1EE', // Antique White
+    '#F1E3C6', // Ivory Beige
+    '#DFDBD2', // Warm Gray
+    '#F3F0EB', // Mist
+    '#EAE3D2', // Oat
+    '#F7F3EF'  // Light Almond
+  ],
+  TOPLAC: [
+    '#F1F0E8', // Pale Gray
+    '#E0DCC8', // Natural Linen
+    '#F5F5F5', // Soft White
+    '#DDD8C4', // Sandstone
+    '#ECE6D9', // Putty
+    '#EBE4D1', // Driftwood
+    '#DAD2C8', // Clay
+    '#F7F3E9', // Porcelain
+    '#CFCFC4', // Pale Olive
+    '#EDEBE4', // Dust
+    '#FAF9F6', // Fog
+    '#C8C6C1', // Mudstone
+    '#E4DED3', // Canvas
+    '#F3EFE7', // Bone
+    '#DED6C1', // Mushroom
+    '#EAE3DA'  // Wheat
+  ],
+  EVERNEW: [
+    '#F0EAD6', // Light Cream
+    '#DFD3C3', // Beige Gray
+    '#EAE0C8', // Buff
+    '#F4F2EC', // Pearl White
+    '#D5CBBE', // Ash Beige
+    '#EFE7DC', // Milk White
+    '#E7DDD1', // Pale Mocha
+    '#F1EBE2', // Rice Paper
+    '#CCC5B9', // Cool Taupe
+    '#EBE6DD', // Faint Stone
+    '#E1DCD3', // Pale Driftwood
+    '#D8CEC0', // Linen Sand
+    '#F3F1EC', // Cloud
+    '#D3CCC5', // Clay Mist
+    '#F7F2E9', // Alabaster
+    '#E2DBD3'  // Misty Beige
+  ]
 };

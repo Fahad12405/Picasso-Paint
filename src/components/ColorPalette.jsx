@@ -21,7 +21,7 @@ const ColorPalette = () => {
     <section className="py-24 bg-white text-center">
       <div className="max-w-screen-xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6" data-aos="fade-down">
-          Brighto Paints Color Palette
+          Picasso Paints Shades Palette
         </h2>
 
         {/* Tabs */}
@@ -56,7 +56,7 @@ const ColorPalette = () => {
               className="flex flex-col items-center group cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
               <div
-                className="w-[90px] h-[90px] rounded-full transition duration-300 shadow-sm"
+                className="w-[120px] h-[80px] rounded-sm transition duration-300 shadow-sm"
                 style={{ backgroundColor: color }}
               ></div>
               <p className="mt-2 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

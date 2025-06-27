@@ -9,7 +9,7 @@ import img2 from '../assets/Hero/hero2.jpg';
 import img3 from '../assets/Hero/hero3.jpg';
 import img4 from '../assets/Hero/hero4.jpg';
 import toplac_image from '../assets/Hero/toplac.jpg';
-import ink_image from '../assets/Hero/InkPaint.jpeg';
+import ink_image from '../assets/Hero/Ink Paints.jpg';
 import industrila_image from '../assets/Hero/industrailPaint.jpeg';
 
 export default function HeroSection() {

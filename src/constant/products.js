@@ -11,6 +11,8 @@ import Product10 from "../assets/Kent Gallon/Red Oxide.jpg";
 import Product11 from "../assets/Kent Gallon/Wall Primer.jpg";
 import Product12 from "../assets/Kent Gallon/Weather Care.jpg";
 import Product13 from "../assets/Evernew Gallon/Weather Care.jpg";
+import Product14 from "../assets/Evernew Gallon/Matt Enamel Pearl Finish.png";
+
 
 export const products = [
   {
@@ -117,6 +119,14 @@ export const products = [
       "Weather Care is a high-performance exterior paint that resists harsh weather, UV rays, and dirt. Keeps your walls protected and vibrant year-round.",
     image: Product13,
   },
+   {
+    id: 14,
+    name: "Matt Enamel Pearl Finish",
+    category: "EVERNEW",
+   description:
+  "Designed for exterior surfaces, Matt Enamel Pearl Finish delivers a rich matte look with a delicate pearl effect, offering weather resistance and long-lasting durability.",
+    image: Product14,
+  },
 ];
 
 
@@ -133,4 +143,8 @@ export const productsGallon = [
   { id: 10, name: 'Red Oxide', image: Product10 },
   { id: 11, name: 'Wall Primer', image: Product11 },
   { id: 12, name: 'Weather Care', image: Product12 },
+    { id: 13, name: 'Weather Care', image: Product13 },
+        { id: 14, name: 'Matt Enamel Pearl Finish', image: Product14 },
+
+
 ];
