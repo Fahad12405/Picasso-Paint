@@ -22,7 +22,7 @@ import AllItems from './pages/Product/Product.jsx';
 
 import ProductDetail from './components/ProductDetails.jsx';
 import ScrollToTop from './utils/ScrollToTop';
-import { PlasticEmulsion } from './constant/shades/Evernew Shades/PlasticEmulsion';
+import { SemiPlasticEmulsion } from './constant/shades/Evernew Shades/SemiPlasticEmulsion';
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
 
       {/* <div className='flex flex-wrap justify-center mt-36'>
         {
-          PlasticEmulsion.map((color, ind) => (
+          SemiPlasticEmulsion.map((color, ind) => (
             <div
               key={ind}
               className="w-32 h-32 rounded text-nowrap overflow-hidden text-left line-clamp-1 flex flex-col items-center justify-center text-sm text-black border"

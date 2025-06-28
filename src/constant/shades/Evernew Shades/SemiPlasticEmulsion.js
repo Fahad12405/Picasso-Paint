@@ -1,4 +1,4 @@
-export const PlasticEmulsion = [
+export const SemiPlasticEmulsion = [
     {
         name: "Off White",
         code: 1112,
