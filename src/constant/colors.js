@@ -1,92 +1,92 @@
-
+// Color options grouped by category
 export const colorOptions = [
-    { name: "Peanut Cream", color: "#F5DEB3", code: "4015" },
-    { name: "Light Gray", color: "#D3D3D3", code: "4016" },
-    { name: "Cream White", color: "#FFFDD0", code: "4017" },
-    { name: "Soft Pink", color: "#F8BBD9", code: "4018" },
-    { name: "Beige", color: "#F5F5DC", code: "4019" },
-    { name: "Mint Green", color: "#F0FFF0", code: "4020" },
-    { name: "Sage Green", color: "#9CAF88", code: "4021" },
-    { name: "Peach", color: "#FFCBA4", code: "4022" },
-    { name: "Light Blue", color: "#ADD8E6", code: "4023" },
-    { name: "Lavender", color: "#E6E6FA", code: "4024" },
-    { name: "Lemon Yellow", color: "#FFFACD", code: "4025" },
-    { name: "Coral", color: "#FF7F50", code: "4026" },
-    { name: "Sky Blue", color: "#87CEEB", code: "4027" },
-    { name: "Olive Green", color: "#808000", code: "4028" },
-    { name: "Rose Pink", color: "#FF69B4", code: "4029" },
-    { name: "Turquoise", color: "#40E0D0", code: "4030" },
-    { name: "Golden Yellow", color: "#FFD700", code: "4031" },
-    { name: "Forest Green", color: "#228B22", code: "4032" },
-    { name: "Royal Blue", color: "#4169E1", code: "4033" },
-    { name: "Deep Purple", color: "#663399", code: "4034" },
-    { name: "Crimson Red", color: "#DC143C", code: "4035" },
-    { name: "Charcoal", color: "#36454F", code: "4036" },
-    { name: "Pure White", color: "#FFFFFF", code: "4037" },
-    { name: "Jet Black", color: "#000000", code: "4038" },
+  // Main Colors
+  { name: "Ash White", code: 2016, color: "#f0f0e6" },
+  { name: "Antique White", code: 2005, color: "#f5e6d3" },
+  { name: "Torres Blue", code: 2018, color: "#99cccc" },
+  { name: "Cool Blue", code: 2019, color: "#66b3cc" },
+  { name: "Jade", code: 2035, color: "#339966" },
+  { name: "Lavender White", code: 2025, color: "#f0e6f0" },
+  { name: "Hazy Blue", code: 2042, color: "#b3cccc" },
+  { name: "Ocean Dip", code: 2041, color: "#0099cc" },
+  { name: "Sweet Blue", code: 2040, color: "#4d80b3" },
+  { name: "Chilli Red", code: 2029, color: "#cc4d4d" },
+  { name: "White Ice", code: 2026, color: "#f5f0e6" },
+  { name: "Grey White", code: 2043, color: "#e6e6e6" },
+  { name: "Orion", code: 2017, color: "#d9c2a3" },
+  { name: "Goosewing", code: 2044, color: "#99b3b3" },
+  { name: "Black", code: 2036, color: "#1a1a1a" },
 
-    // { name: "Jet Black", color: "#000000", code: "4038" },
-    // { name: "Light Blue", color: "#ADD8E6", code: "4023" },
-    // { name: "Lavender", color: "#E6E6FA", code: "4024" },
-    // { name: "Lemon Yellow", color: "#FFFACD", code: "4025" },
-    // { name: "Coral", color: "#FF7F50", code: "4026" },
-    // { name: "Sky Blue", color: "#87CEEB", code: "4027" },
+  // Kent Colors
+  { name: "Off White New", code: 2037, color: "#fff8f0" },
+  { name: "Kitten White", code: 2003, color: "#f5e6d3" },
+  { name: "Peach Goddess", code: 2007, color: "#ff9980" },
+  { name: "Evening Sunset", code: 2010, color: "#cc8066" },
+  { name: "Shimmering Sky", code: 2020, color: "#e6f0e6" },
+  { name: "Off White", code: 2002, color: "#fff5e6" },
+  { name: "Pink", code: 2024, color: "#ffb3b3" },
+  { name: "Terracotta", code: 2009, color: "#cc6633" },
+  { name: "Benjamin Brown", code: 2027, color: "#a6704d" },
+  { name: "Light Green", code: 2021, color: "#99cc99" },
+  { name: "Cameo", code: 2004, color: "#e6c2a6" },
+  { name: "Light Lime", code: 2022, color: "#ccff99" },
+  { name: "Abbey Cream", code: 2031, color: "#e6d9b3" },
+  { name: "Fresh Lime", code: 2023, color: "#99ff66" },
+
+  // Matt Finish Smooth & Washable
+  { name: "Lilac Bliss", code: 2014, color: "#d9b3ff" },
+  { name: "Beige", code: 2038, color: "#d9c2a3" },
+  { name: "Baby Pink", code: 2039, color: "#ffb3cc" },
+  { name: "Angel", code: 2011, color: "#ffcccc" },
+  { name: "Citrus Yellow", code: 2033, color: "#ffff66" },
+  { name: "Opal Lilac", code: 2013, color: "#ccb3ff" },
+  { name: "Havana", code: 2028, color: "#8b4513" },
+  { name: "Lyrical Pink", code: 2008, color: "#ff9999" },
+  { name: "Natural Paprika", code: 2006, color: "#cc8066" },
+  { name: "Mango", code: 2030, color: "#ffcc66" },
+  { name: "Night Magic", code: 2034, color: "#6666b3" },
+  { name: "Orange", code: 2032, color: "#ff8033" },
+  { name: "Pink Velvet", code: 2015, color: "#b366b3" },
+  { name: "Carnival Pink", code: 2012, color: "#cc4d80" },
+  { name: "Mauve Special", code: 1155, color: "#898CD1" },
+  { name: "Sea Blue", code: 1140, color: "#9ACEE4" },
+  { name: "Leaf Green Special", code: 1145, color: "#7D9771" },
+  { name: "Grey White", code: 1132, color: "#B7BABF" },
+  { name: "Picasso Purple", code: 1146, color: "#8E8AAF" },
+  { name: "Soft Blue", code: 1164, color: "#96CBF3" },
+  { name: "Ribbon Yellow", code: 1141, color: "#F8E48E" },
+  { name: "Whisper", code: 1133, color: "#A7ABAC" },
+  { name: "Velvet Blue Special", code: 1156, color: "#407FB2" },
+  { name: "Blue Award Special", code: 1147, color: "#184097" },
+  { name: "Fresh Orange Special", code: 1144, color: "#D07F47" },
+  { name: "Glossewing", code: 1173, color: "#989CA8" },
+  { name: "Steel Grey Special", code: 1134, color: "#6B6070" },
+  { name: "Jade Special", code: 1157, color: "#23726D" },
+  { name: "Spice Special", code: 1126, color: "#7F5E69" },
+  { name: "Kent Yellow", code: 1040, color: "#ffff66" },
+  { name: "Lilac", code: 1009, color: "#99cccc" },
+  { name: "Tile Red", code: 1016, color: "#cc6666" },
+  { name: "Carnival Pink", code: 1044, color: "#cc4d80" },
+   {
+    name: "Mid Blue",
+    code: 4029,
+    color: "#0066b3",
+  }, {
+    name: "Coriander",
+    code: 4017,
+    color: "#a6906b",
+  },
 ];
 
-
+// Predefined color palettes for different product lines
 export const colorPalettes = {
-  KENT: [
-    '#F5F5DC', // Beige
-    '#EAEAEA', // Light Gray
-    '#F0EAD6', // Off White
-    '#DCDCDC', // Gainsboro
-    '#EFEFEF', // Light Neutral
-    '#F8F4E3', // Eggshell
-    '#E8E4C9', // Pale Sand
-    '#FAF3E0', // Cream
-    '#EDE6DB', // Stone
-    '#D6CEC3', // Soft Taupe
-    '#F4F1EE', // Antique White
-    '#F1E3C6', // Ivory Beige
-    '#DFDBD2', // Warm Gray
-    '#F3F0EB', // Mist
-    '#EAE3D2', // Oat
-    '#F7F3EF'  // Light Almond
-  ],
-  TOPLAC: [
-    '#F1F0E8', // Pale Gray
-    '#E0DCC8', // Natural Linen
-    '#F5F5F5', // Soft White
-    '#DDD8C4', // Sandstone
-    '#ECE6D9', // Putty
-    '#EBE4D1', // Driftwood
-    '#DAD2C8', // Clay
-    '#F7F3E9', // Porcelain
-    '#CFCFC4', // Pale Olive
-    '#EDEBE4', // Dust
-    '#FAF9F6', // Fog
-    '#C8C6C1', // Mudstone
-    '#E4DED3', // Canvas
-    '#F3EFE7', // Bone
-    '#DED6C1', // Mushroom
-    '#EAE3DA'  // Wheat
-  ],
-  EVERNEW: [
-    '#F0EAD6', // Light Cream
-    '#DFD3C3', // Beige Gray
-    '#EAE0C8', // Buff
-    '#F4F2EC', // Pearl White
-    '#D5CBBE', // Ash Beige
-    '#EFE7DC', // Milk White
-    '#E7DDD1', // Pale Mocha
-    '#F1EBE2', // Rice Paper
-    '#CCC5B9', // Cool Taupe
-    '#EBE6DD', // Faint Stone
-    '#E1DCD3', // Pale Driftwood
-    '#D8CEC0', // Linen Sand
-    '#F3F1EC', // Cloud
-    '#D3CCC5', // Clay Mist
-    '#F7F2E9', // Alabaster
-    '#E2DBD3'  // Misty Beige
-  ]
+  "Kent Weather Care": colorOptions.slice(0, 18),
+  "Kent Matt Finish": colorOptions.slice(16, 34),
+  "Kent Luxury Emulsion": colorOptions.slice(32, 50),
+  "Evernew Gloss Enamel": colorOptions.slice(0, 18).reverse(),
+  "Evernew Hydro Matt": colorOptions.slice(16, 34).reverse(),
+  "Evernew Semi Plastic Emulsion": colorOptions.slice(32, 50).reverse(),
+  "Evernew Weather Care": [...colorOptions.slice(0, 12), ...colorOptions.slice(34, 40)],
+  "Kent Hydro Matt Finish": [...colorOptions.slice(8, 20), ...colorOptions.slice(42, 48)],
+  "Kent High Gloss": [...colorOptions.slice(16, 28), ...colorOptions.slice(26, 32)],
 };

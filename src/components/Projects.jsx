@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
 import { portfolioData } from "../constant/porftfolio";
+import { Link } from 'react-router';
 
 const Portfolio = () => {
   useEffect(() => {
@@ -12,17 +13,16 @@ const Portfolio = () => {
   return (
     <div className="max-w-6xl mx-auto p-4">
       {/* Header */}
-      <div className="flex justify-between items-center mb-6 flex-wrap gap-4" data-aos="fade-down">
+      <div className="flex justify-between items-center mb-12 flex-wrap gap-4" data-aos="fade-down">
         <div>
           <h2 className="text-2xl font-semibold">Our Portfolio</h2>
           <p className="text-sm text-gray-500 mt-1 max-w-md">
-            Lorem ipsum dolor sit amet elit. Eum nihil et molestiae ea perferendis.
-            Voluptas dolorum maxime molestiae perferendis.
+          Discover our vibrant portfolio showcasing a diverse range of residential, commercial, and industrial painting projects. From bold exterior transformations to elegant interior finishes, our work reflects premium quality, creativity, and long-lasting results. Explore how our professional painting services bring color and life to every space.
           </p>
         </div>
-        <button className="border px-4 py-1 rounded-full text-sm hover:bg-black hover:text-white transition" data-aos="fade-up">
+        <Link to="/gallery" className="border px-4 py-1 rounded-full text-sm hover:bg-black hover:text-white transition" data-aos="fade-up">
           View All
-        </button>
+        </Link>
       </div>
 
       {/* Grid */}
