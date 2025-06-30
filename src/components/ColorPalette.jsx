@@ -86,7 +86,7 @@ const ColorPalette = () => {
             </h3>
             <p className="text-sm text-gray-600">Code: #{selectedColor.code}</p>
             <button
-              onClick={() => navigate("/Allitems")}
+              onClick={() => navigate("/AllColors")}
               className="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
             >
               View All Items

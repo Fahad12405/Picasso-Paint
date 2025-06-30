@@ -6,8 +6,11 @@ import { portfolioData } from "../constant/porftfolio";
 import { Link } from 'react-router';
 
 const Portfolio = () => {
+
+  const pathname = window.location.pathname;
+
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // duration in ms, customize as needed
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
@@ -17,12 +20,19 @@ const Portfolio = () => {
         <div>
           <h2 className="text-2xl font-semibold">Our Portfolio</h2>
           <p className="text-sm text-gray-500 mt-1 max-w-md">
-          Discover our vibrant portfolio showcasing a diverse range of residential, commercial, and industrial painting projects. From bold exterior transformations to elegant interior finishes, our work reflects premium quality, creativity, and long-lasting results. Explore how our professional painting services bring color and life to every space.
+            Discover our vibrant portfolio showcasing a diverse range of residential, commercial, and industrial painting projects. From bold exterior transformations to elegant interior finishes, our work reflects premium quality, creativity, and long-lasting results. Explore how our professional painting services bring color and life to every space.
           </p>
         </div>
-        <Link to="/gallery" className="border px-4 py-1 rounded-full text-sm hover:bg-black hover:text-white transition" data-aos="fade-up">
+        {
+          pathname !== "/gallery" && (
+            <Link to="/gallery" className="border px-4 py-1 rounded-full text-sm hover:bg-black hover:text-white transition" data-aos="fade-up">
+              View All
+            </Link>
+          )
+        }
+        {/* <Link to="/gallery" className="border px-4 py-1 rounded-full text-sm hover:bg-black hover:text-white transition" data-aos="fade-up">
           View All
-        </Link>
+        </Link> */}
       </div>
 
       {/* Grid */}

@@ -61,7 +61,7 @@ const MainNavbar = () => {
   ];
 
   const productItems = [
-    { path: '/AllItems', label: 'Product' }
+    { path: '/AllColors', label: 'Product' }
   ];
 
   return (

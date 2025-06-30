@@ -37,7 +37,7 @@ const BannerSection = () => {
                 Premium acrylic paint with lasting vibrant color and strong durability.
               </p>
               <Link
-                to="/Allitems?category=EVERNEW"
+                to="/AllColors?category=EVERNEW"
                 className="inline-block bg-red-800 hover:bg-red-500 text-white text-xs px-4 py-2 rounded-full transition"
               >
                 View Products
@@ -70,7 +70,7 @@ const BannerSection = () => {
                 Oil-based paint with smooth application and professional-grade finish.
               </p>
               <Link
-                to="/Allitems?category=KENT"
+                to="/AllColors?category=KENT"
                 className="inline-block bg-red-800 hover:bg-red-500 text-white text-xs px-4 py-2 rounded-full transition"
               >
                 View Products

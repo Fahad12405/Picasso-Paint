@@ -75,7 +75,7 @@ const AboutUs = () => {
               </dl>
               <div className="mt-6 flex gap-4">
                 <a
-                  href="/Allitems"
+                  href="/AllColors"
                   className="rounded-md bg-[#BB2429] hover:bg-[#ff6369] px-4 py-2 text-sm font-semibold text-white "
                 >
                   Explore Products

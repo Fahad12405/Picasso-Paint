@@ -1,13 +1,15 @@
-import React, { useRef } from 'react'
-import { Phone } from 'lucide-react'
+import React, { useRef, useState } from 'react'
+import { Loader, Phone } from 'lucide-react'
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 
 function Contact() {
   const form = useRef()
+  const [loading, setLoading] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault()
+    setLoading(true)
 
     const formData = new FormData(form.current)
     const name = formData.get('user_name')
@@ -22,6 +24,7 @@ function Contact() {
         title: 'Incomplete Form',
         text: 'Please fill in all fields.',
       })
+      setLoading(false)
       return
     }
 
@@ -33,6 +36,7 @@ function Contact() {
         title: 'Invalid Email',
         text: 'Please enter a valid email address.',
       })
+      setLoading(false)
       return
     }
 
@@ -52,6 +56,7 @@ function Contact() {
             text: 'Thank you for contacting us. We will get back to you soon.',
           })
           form.current.reset()
+          setLoading(false)
         },
         (error) => {
           console.log(error.text)
@@ -60,19 +65,20 @@ function Contact() {
             title: 'Failed to Send',
             text: 'Something went wrong. Please try again.',
           })
+          setLoading(false)
         }
       )
   }
 
   return (
-<div className="p-4 sm:p-0 lg:p-0 bg-white">
-{/* Centered Big Heading */}
-    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-slate-900 mb-12">
-      Contact Us
-    </h1>
-  
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto bg-white">
-      
+    <div className="p-4 sm:p-0 lg:p-0 bg-white">
+      {/* Centered Big Heading */}
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-slate-900 mb-12">
+        Contact Us
+      </h1>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto bg-white">
+
         {/* Left Content */}
         <div>
           <h2 className="text-slate-900 text-2xl sm:text-3xl font-bold">Let's Talk</h2>
@@ -80,7 +86,7 @@ function Contact() {
             Email us with any questions or inquiries or call <strong>0331-PICASSO (7422776)</strong>.
             We’d be happy to answer your questions and set up a meeting with you.
           </p>
-  
+
           {/* Email */}
           <div className="mt-6">
             <h3 className="text-slate-900 text-base font-semibold">Email</h3>
@@ -100,7 +106,7 @@ function Contact() {
               </li>
             </ul>
           </div>
-  
+
           {/* Phone */}
           <div className="mt-6">
             <h3 className="text-slate-900 text-base font-semibold">Phone</h3>
@@ -117,7 +123,7 @@ function Contact() {
             </ul>
           </div>
         </div>
-  
+
         {/* Right Form */}
         <form ref={form} onSubmit={sendEmail} className="space-y-4 w-full">
           <input
@@ -150,15 +156,23 @@ function Contact() {
           />
           <button
             type="submit"
-            className="w-full text-white bg-[#BB2429] hover:bg-[#ff6369] transition rounded-md text-sm font-medium px-4 py-2.5 mt-2"
+            className="w-full text-white bg-[#BB2429] hover:bg-[#bb2429cf] transition rounded-md text-sm font-medium px-4 py-2.5 mt-2"
+            disabled={loading}
           >
-            Send message
+            {
+              loading ? (
+                <div className='flex justify-center items-center'>
+                  <Loader className='animate-spin' />
+                  <span className='ml-2'>Sending...</span>
+                </div>
+              ) : "Send Message"
+            }
           </button>
         </form>
       </div>
     </div>
   )
-  
+
 }
 
 export default Contact

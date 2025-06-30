@@ -55,7 +55,7 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="800">
-              <Link to="/AllItems" className="bg-[#BB2429] hover:bg-[#ff6369] text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
+              <Link to="/AllColors" className="bg-[#BB2429] hover:bg-[#bb2429cf] text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
                 Shop Premium Colors
                 <ArrowRight className="w-5 h-5" />
               </Link>
@@ -68,7 +68,7 @@ export default function HeroSection() {
             <div className="grid grid-cols-2 gap-4 lg:gap-6">
 
               {/* Image 1 - Decorative Paints */}
-              <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
+              <Link to="/AllColors" className="relative group overflow-hidden rounded-2xl block">
                 <img
                   src={img3}
                   alt="Decorative Paints"
@@ -80,7 +80,7 @@ export default function HeroSection() {
               </Link>
 
               {/* Image 2 - Toplac Paints */}
-              <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
+              <Link to="/AllColors" className="relative group overflow-hidden rounded-2xl block">
                 <img
                   src={toplac_image}
                   alt="Toplac Paints"
@@ -92,7 +92,7 @@ export default function HeroSection() {
               </Link>
 
               {/* Image 3 - Ink Paints */}
-              <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
+              <Link to="/AllColors" className="relative group overflow-hidden rounded-2xl block">
                 <img
                   src={ink_image}
                   alt="Ink Paints"
@@ -104,7 +104,7 @@ export default function HeroSection() {
               </Link>
 
               {/* Image 4 - Industrial Paints */}
-              <Link to="/AllItems" className="relative group overflow-hidden rounded-2xl block">
+              <Link to="/AllColors" className="relative group overflow-hidden rounded-2xl block">
                 <img
                   src={industrila_image}
                   alt="Industrial Paints"

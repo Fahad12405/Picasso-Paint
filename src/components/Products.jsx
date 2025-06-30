@@ -86,7 +86,7 @@ const ProductSlider = () => {
 
       <div className="flex justify-center mt-10">
         <Link
-          to="/Allitems"
+          to="/AllColors"
           className="inline-block bg-black text-white py-2 px-10 rounded-lg hover:bg-gray-900 transition"
         >
           View All
