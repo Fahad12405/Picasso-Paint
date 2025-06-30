@@ -6,20 +6,20 @@ import WallPainter from "./Wall Color/wallColor.jsx";
 
 
 const ProductDetail = () => {
-  const { productId } = useParams();
+  const { productName } = useParams();
   const navigate = useNavigate();
   const [selectedColor, setSelectedColor] = useState(colorOptions[0]);
 
-  const product = products.find((p) => p.id === parseInt(productId));
+  const product = products.find((p) => p.name === productName);
   console.log(product)
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
-    if (!product) {
-      navigate("/");
-    }
+    // if (!product) {
+    //   navigate("/");
+    // }
   }, [product, navigate]);
 
   if (!product) return null;
@@ -28,11 +28,11 @@ const ProductDetail = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-20">
-      <button className="mb-8 px-1 py-2 pt-10 rounded" onClick={() => navigate("/")}>
+      <button className="mb-8 px-1 py-2 pt-10 rounded" onClick={() => navigate("/AllItems")}>
         ← Back to Products
       </button>
 
-      <WallPainter />
+      <WallPainter shades={product?.shades} />
 
       {/* <div className="flex flex-col md:flex-row gap-10">
         <div className="flex-shrink-0 w-full md:w-1/3">

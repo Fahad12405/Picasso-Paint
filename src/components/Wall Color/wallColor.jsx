@@ -1370,57 +1370,58 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import Sofa from "@/assets/sofa.png" // Replace with your actual sofa PNG path
 
-const colors = [
-  { name: "Pale Peach", hex: "#F5D5AE" },
-  { name: "Light Pink", hex: "#F8E8E8" },
-  { name: "Light Gray", hex: "#E5E5E5" },
-  { name: "Pale Yellow", hex: "#F5F5DC" },
-  { name: "Cream", hex: "#F5F5DC" },
-  { name: "Beige", hex: "#D2B48C" },
-  { name: "Off White", hex: "#FAF0E6" },
-  { name: "Light Lavender", hex: "#E6E6FA" },
-  { name: "Pale Blue", hex: "#B0E0E6" },
-  { name: "Light Green", hex: "#F0FFF0" },
-  { name: "Peach", hex: "#FFCBA4" },
-  { name: "Light Brown", hex: "#D2B48C" },
-  { name: "Powder Blue", hex: "#B0E0E6" },
-  { name: "Mint Green", hex: "#F5FFFA" },
-  { name: "Light Orange", hex: "#FFE4B5" },
-  { name: "Rose", hex: "#FFE4E1" },
-  { name: "Pale Green", hex: "#98FB98" },
-  { name: "Light Coral", hex: "#F08080" },
-  { name: "Sky Blue", hex: "#87CEEB" },
-  { name: "Lavender", hex: "#E6E6FA" },
-  { name: "Light Yellow", hex: "#FFFFE0" },
-  { name: "Pale Orange", hex: "#FFEFD5" },
-  { name: "Light Cyan", hex: "#E0FFFF" },
-  { name: "Pale Pink", hex: "#FFE4E1" },
-  { name: "Sage Green", hex: "#9CAF88" },
-  { name: "Bright Yellow", hex: "#FFFF00" },
-  { name: "Turquoise", hex: "#40E0D0" },
-  { name: "Forest Green", hex: "#228B22" },
-  { name: "Light Blue", hex: "#ADD8E6" },
-  { name: "Violet", hex: "#8A2BE2" },
-  { name: "Olive", hex: "#808000" },
-  { name: "Navy Blue", hex: "#000080" },
-  { name: "Purple", hex: "#800080" },
-  { name: "Maroon", hex: "#800000" },
-  { name: "Black", hex: "#000000" },
+// const colors = [
+//   { name: "Pale Peach", hex: "#F5D5AE" },
+//   { name: "Light Pink", hex: "#F8E8E8" },
+//   { name: "Light Gray", hex: "#E5E5E5" },
+//   { name: "Pale Yellow", hex: "#F5F5DC" },
+//   { name: "Cream", hex: "#F5F5DC" },
+//   { name: "Beige", hex: "#D2B48C" },
+//   { name: "Off White", hex: "#FAF0E6" },
+//   { name: "Light Lavender", hex: "#E6E6FA" },
+//   { name: "Pale Blue", hex: "#B0E0E6" },
+//   { name: "Light Green", hex: "#F0FFF0" },
+//   { name: "Peach", hex: "#FFCBA4" },
+//   { name: "Light Brown", hex: "#D2B48C" },
+//   { name: "Powder Blue", hex: "#B0E0E6" },
+//   { name: "Mint Green", hex: "#F5FFFA" },
+//   { name: "Light Orange", hex: "#FFE4B5" },
+//   { name: "Rose", hex: "#FFE4E1" },
+//   { name: "Pale Green", hex: "#98FB98" },
+//   { name: "Light Coral", hex: "#F08080" },
+//   { name: "Sky Blue", hex: "#87CEEB" },
+//   { name: "Lavender", hex: "#E6E6FA" },
+//   { name: "Light Yellow", hex: "#FFFFE0" },
+//   { name: "Pale Orange", hex: "#FFEFD5" },
+//   { name: "Light Cyan", hex: "#E0FFFF" },
+//   { name: "Pale Pink", hex: "#FFE4E1" },
+//   { name: "Sage Green", hex: "#9CAF88" },
+//   { name: "Bright Yellow", hex: "#FFFF00" },
+//   { name: "Turquoise", hex: "#40E0D0" },
+//   { name: "Forest Green", hex: "#228B22" },
+//   { name: "Light Blue", hex: "#ADD8E6" },
+//   { name: "Violet", hex: "#8A2BE2" },
+//   { name: "Olive", hex: "#808000" },
+//   { name: "Navy Blue", hex: "#000080" },
+//   { name: "Purple", hex: "#800080" },
+//   { name: "Maroon", hex: "#800000" },
+//   { name: "Black", hex: "#000000" },
 
-  // ✅ New light wall-friendly shades
-  { name: "Almond White", hex: "#F4F1EE" },
-  { name: "Dusty Rose", hex: "#EED5D2" },
-  { name: "Linen", hex: "#FAF0E6" },
-  { name: "Blush Beige", hex: "#F2D7C9" },
-  { name: "Cloud Gray", hex: "#D6D6D6" },
-  { name: "Olive Mist", hex: "#C7D3C0" },
-  { name: "Sandstone Beige", hex: "#E8D8C3" }
+//   // ✅ New light wall-friendly shades
+//   { name: "Almond White", hex: "#F4F1EE" },
+//   { name: "Dusty Rose", hex: "#EED5D2" },
+//   { name: "Linen", hex: "#FAF0E6" },
+//   { name: "Blush Beige", hex: "#F2D7C9" },
+//   { name: "Cloud Gray", hex: "#D6D6D6" },
+//   { name: "Olive Mist", hex: "#C7D3C0" },
+//   { name: "Sandstone Beige", hex: "#E8D8C3" }
 
-];
+// ];
 
 
-export default function Component() {
-  const [selectedColor, setSelectedColor] = useState(colors[3]) // Pale Yellow
+export default function Component({ shades = [] }) {
+
+  const [selectedColor, setSelectedColor] = useState(shades?.[3]) // Pale Yellow
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white  to-white rounded-xl">
@@ -1431,7 +1432,7 @@ export default function Component() {
             <Card className="overflow-hidden shadow-2xl rounded-2xl border border-gray-200 transition duration-500 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
               <div
                 className="relative aspect-[4/3] bg-white rounded-lg"
-                style={{ backgroundColor: selectedColor.hex }}
+                style={{ backgroundColor: selectedColor?.color }}
               >
                 {/* Sofa image */}
                 <img
@@ -1450,35 +1451,45 @@ export default function Component() {
                 <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">🎨 Picasso Paint</h1>
                 <p className="text-gray-500 text-sm mt-1">Premium Interior Wall Colors</p>
               </div>
-              <Button variant="ghost" size="icon" className="text-pink-600 hover:text-pink-800 transition">
-                <Heart className="w-6 h-6" />
-              </Button>
             </div>
 
             {/* Color Selector */}
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <label className="text-sm font-semibold text-gray-900">Selected Shade:</label>
-                <span className="text-sm text-gray-600">{selectedColor.name}</span>
+                <span className="text-sm text-gray-600">{selectedColor?.name}</span>
               </div>
 
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-6">
-                {colors.map((color, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setSelectedColor(color)}
-                    className={`w-full h-12 min-w-[80px] rounded-sm border-[2px] transition-all duration-300 hover:scale-[1.02] shadow-sm ${selectedColor.name === color.name
-                      ? "border-gray-900 ring-2 ring-offset-1 ring-gray-300"
-                      : "border-gray-300"
-                      }`}
-                    style={{ backgroundColor: color.hex }}
-                    title={color.name}
-                  />
-                ))}
-              </div>
+              {shades.length > 0 ? (
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-6">
+                  {
+                    shades.map((color, index) => (
+                      <div className="flex flex-col items-center">
+                        <button
+                          key={index}
+                          onClick={() => setSelectedColor(color)}
+                          className={`w-full h-12 min-w-[80px] rounded-sm border-[2px] transition-all duration-300 hover:scale-[1.02] shadow-sm ${selectedColor.name === color.name
+                            ? "border-gray-900 ring-2 ring-offset-1 ring-gray-300"
+                            : "border-gray-300"
+                            }`}
+                          style={{ backgroundColor: color.color }}
+                          title={color.name}
+                        />
+                        <p className="text-xs text-gray-500">{color.code}</p>
+                      </div>
+                    ))
+                  }
+                </div>
+              ) : (
+                <div className="flex justify-center">
+                  <p className="text-md text-center text-gray-500 font-semibold ">Shades Not Found</p>
+                </div>
+              )
 
-              <p className="text-xs text-gray-500 italic">*Actual color may slightly vary from display.</p>
+              }
             </div>
+
+            <p className="text-xs text-gray-500 italic">*Actual color may slightly vary from display.</p>
 
 
 

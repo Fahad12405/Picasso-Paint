@@ -12,6 +12,8 @@ import Product11 from "../assets/Kent Gallon/Wall Primer.jpg";
 import Product12 from "../assets/Kent Gallon/Weather Care.jpg";
 import Product13 from "../assets/Evernew Gallon/Weather Care.jpg";
 import Product14 from "../assets/Evernew Gallon/Matt Enamel Pearl Finish.png";
+import { EvernewHydroMattFinish, EvernewSuperGlossEnamel, EvernewWeatherCare, SemiPlasticEmulsion } from "./shades/Evernew Shades";
+import { KentHighGloss, KentHydroMattFinish, KentLuxuryEmulsion, KentWeatherCare } from "./shades/Kent Shades";
 
 
 export const products = [
@@ -22,6 +24,7 @@ export const products = [
     description:
       "Evernew Emulsion provides a smooth and durable finish, ideal for interior walls. It offers excellent coverage and a soft matte appearance, making your space look clean and elegant.",
     image: Product1,
+    shades: SemiPlasticEmulsion
   },
   {
     id: 2,
@@ -30,6 +33,7 @@ export const products = [
     description:
       "Kent Acrylic Putty offers a smooth base for walls by filling cracks and imperfections. Its strong adhesion ensures a perfect surface for topcoat application.",
     image: Product2,
+    shades: []
   },
   {
     id: 3,
@@ -38,6 +42,7 @@ export const products = [
     description:
       "Evernew Gloss Enamel gives a luxurious, high-sheen finish that is both durable and washable. Best suited for metal and wooden surfaces.",
     image: Product3,
+    shades: EvernewSuperGlossEnamel
   },
   {
     id: 4,
@@ -46,6 +51,7 @@ export const products = [
     description:
       "Kent Gloss Enamel offers a brilliant glossy look and long-lasting protection for furniture, doors, windows, and trims.",
     image: Product4,
+    shades: KentHighGloss
   },
   {
     id: 5,
@@ -54,6 +60,7 @@ export const products = [
     description:
       "Hydro Matt by Evernew delivers a rich matte finish with water resistance. Ideal for interior and exterior applications.",
     image: Product5,
+    shades: EvernewHydroMattFinish
   },
   {
     id: 6,
@@ -62,6 +69,7 @@ export const products = [
     description:
       "Kent Hydro Matt provides a smooth, breathable, and water-repellent layer that maintains a natural look for walls.",
     image: Product6,
+    shades: KentHydroMattFinish
   },
   {
     id: 7,
@@ -70,6 +78,7 @@ export const products = [
     description:
       "This water-based primer and sealer enhances paint adhesion and ensures long-term protection against moisture and stains.",
     image: Product7,
+    shades: []
   },
   {
     id: 8,
@@ -78,6 +87,7 @@ export const products = [
     description:
       "Luxury Emulsion adds richness and elegance to your interiors. It offers excellent color retention, smooth coverage, and a lavish matte appearance.",
     image: Product8,
+    shades: KentLuxuryEmulsion
   },
   {
     id: 9,
@@ -86,6 +96,7 @@ export const products = [
     description:
       "Matt Enamel provides a subtle, low-sheen finish for surfaces that need a classy look with durability and easy maintenance.",
     image: Product9,
+    shades: []
   },
   {
     id: 10,
@@ -94,6 +105,7 @@ export const products = [
     description:
       "Red Oxide is a protective metal primer that prevents rust and corrosion. Ideal for metal gates, grills, and industrial structures.",
     image: Product10,
+    shades: []
   },
   {
     id: 11,
@@ -102,6 +114,7 @@ export const products = [
     description:
       "This primer prepares walls for a smooth and uniform topcoat. It penetrates deeply and improves paint adhesion for lasting results.",
     image: Product11,
+    shades: []
   },
   {
     id: 12,
@@ -110,6 +123,7 @@ export const products = [
     description:
       "Weather Care is a high-performance exterior paint that resists harsh weather, UV rays, and dirt. Keeps your walls protected and vibrant year-round.",
     image: Product12,
+    shades: KentWeatherCare
   },
   {
     id: 13,
@@ -118,14 +132,16 @@ export const products = [
     description:
       "Weather Care is a high-performance exterior paint that resists harsh weather, UV rays, and dirt. Keeps your walls protected and vibrant year-round.",
     image: Product13,
+    shades: EvernewWeatherCare
   },
-   {
+  {
     id: 14,
     name: "Matt Enamel Pearl Finish",
     category: "EVERNEW",
-   description:
-  "Designed for exterior surfaces, Matt Enamel Pearl Finish delivers a rich matte look with a delicate pearl effect, offering weather resistance and long-lasting durability.",
+    description:
+      "Designed for exterior surfaces, Matt Enamel Pearl Finish delivers a rich matte look with a delicate pearl effect, offering weather resistance and long-lasting durability.",
     image: Product14,
+    shades: EvernewHydroMattFinish
   },
 ];
 
@@ -143,8 +159,6 @@ export const productsGallon = [
   { id: 10, name: 'Red Oxide', image: Product10 },
   { id: 11, name: 'Wall Primer', image: Product11 },
   { id: 12, name: 'Weather Care', image: Product12 },
-    { id: 13, name: 'Weather Care', image: Product13 },
-        { id: 14, name: 'Matt Enamel Pearl Finish', image: Product14 },
-
-
+  { id: 13, name: 'Weather Care', image: Product13 },
+  { id: 14, name: 'Matt Enamel Pearl Finish', image: Product14 },
 ];
