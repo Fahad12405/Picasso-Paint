@@ -1,3 +1,6 @@
+import { EvernewHydroMattFinish, EvernewSuperGlossEnamel, EvernewWeatherCare, SemiPlasticEmulsion } from "./shades/Evernew Shades";
+import { KentHighGloss, KentHydroMattFinish, KentLuxuryEmulsion, KentMattFinish, KentWeatherCare } from "./shades/Kent Shades";
+
 // Color options grouped by category
 export const colorOptions = [
   // Main Colors
@@ -67,7 +70,7 @@ export const colorOptions = [
   { name: "Lilac", code: 1009, color: "#99cccc" },
   { name: "Tile Red", code: 1016, color: "#cc6666" },
   { name: "Carnival Pink", code: 1044, color: "#cc4d80" },
-   {
+  {
     name: "Mid Blue",
     code: 4029,
     color: "#0066b3",
@@ -80,13 +83,13 @@ export const colorOptions = [
 
 // Predefined color palettes for different product lines
 export const colorPalettes = {
-  "Kent Weather Care": colorOptions.slice(0, 18),
-  "Kent Matt Finish": colorOptions.slice(16, 34),
-  "Kent Luxury Emulsion": colorOptions.slice(32, 50),
-  "Evernew Gloss Enamel": colorOptions.slice(0, 18).reverse(),
-  "Evernew Hydro Matt": colorOptions.slice(16, 34).reverse(),
-  "Evernew Semi Plastic Emulsion": colorOptions.slice(32, 50).reverse(),
-  "Evernew Weather Care": [...colorOptions.slice(0, 12), ...colorOptions.slice(34, 40)],
-  "Kent Hydro Matt Finish": [...colorOptions.slice(8, 20), ...colorOptions.slice(42, 48)],
-  "Kent High Gloss": [...colorOptions.slice(16, 28), ...colorOptions.slice(26, 32)],
+  "Kent Weather Care": KentWeatherCare.slice(0, 18),
+  "Kent Matt Finish": KentMattFinish.slice(16, 34),
+  "Kent Luxury Emulsion": KentLuxuryEmulsion.slice(32, 50),
+  "Evernew Gloss Enamel": EvernewSuperGlossEnamel.slice(0, 18).reverse(),
+  "Evernew Hydro Matt": EvernewHydroMattFinish.slice(16, 34).reverse(),
+  "Evernew Semi Plastic Emulsion": SemiPlasticEmulsion.slice(32, 50).reverse(),
+  "Evernew Weather Care": [...EvernewWeatherCare.slice(0, 12), ...EvernewWeatherCare.slice(34, 40)],
+  "Kent Hydro Matt Finish": [...KentHydroMattFinish.slice(8, 20), ...KentHydroMattFinish.slice(42, 48)],
+  "Kent High Gloss": [...KentHighGloss.slice(16, 28), ...KentHighGloss.slice(26, 32)],
 };

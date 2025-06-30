@@ -15,8 +15,8 @@ const ProductSlider = () => {
     }
   };
 
-  const handleClick = (id) => {
-    navigate(`/product/${id}`);
+  const handleClick = (name) => {
+    navigate(`/product/${name}`);
   };
 
   return (
@@ -52,7 +52,7 @@ const ProductSlider = () => {
                   {chunk.map((product) => (
                     <div
                       key={product.id}
-                      onClick={() => handleClick(product.id)}
+                      onClick={() => handleClick(product.name)}
                       className="bg-white p-2 sm:p-3 rounded-lg transition-all cursor-pointer transform hover:scale-105 duration-300 ease-in-out"
                     >
                       <div className="w-full h-[130px] sm:h-[160px] flex items-center justify-center bg-white">

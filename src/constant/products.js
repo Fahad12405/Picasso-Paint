@@ -33,7 +33,7 @@ export const products = [
     description:
       "Kent Acrylic Putty offers a smooth base for walls by filling cracks and imperfections. Its strong adhesion ensures a perfect surface for topcoat application.",
     image: Product2,
-    shades: []
+    shades: KentHydroMattFinish
   },
   {
     id: 3,
@@ -96,7 +96,7 @@ export const products = [
     description:
       "Matt Enamel provides a subtle, low-sheen finish for surfaces that need a classy look with durability and easy maintenance.",
     image: Product9,
-    shades: []
+    shades: KentMattFinish
   },
   {
     id: 10,
@@ -105,7 +105,7 @@ export const products = [
     description:
       "Red Oxide is a protective metal primer that prevents rust and corrosion. Ideal for metal gates, grills, and industrial structures.",
     image: Product10,
-    shades: []
+    shades: KentHighGloss
   },
   {
     id: 11,

@@ -32,11 +32,10 @@ const ColorPalette = () => {
             <button
               key={name}
               onClick={() => setSelectedPalette(name)}
-              className={`px-4 py-2 rounded-md transition-all duration-300 ${
-                selectedPalette === name
+              className={`px-4 py-2 rounded-md transition-all duration-300 ${selectedPalette === name
                   ? "bg-black text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
+                }`}
             >
               {name}
             </button>
