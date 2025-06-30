@@ -13,7 +13,7 @@ import Product12 from "../assets/Kent Gallon/Weather Care.jpg";
 import Product13 from "../assets/Evernew Gallon/Weather Care.jpg";
 import Product14 from "../assets/Evernew Gallon/Matt Enamel Pearl Finish.png";
 import { EvernewHydroMattFinish, EvernewSuperGlossEnamel, EvernewWeatherCare, SemiPlasticEmulsion } from "./shades/Evernew Shades";
-import { KentHighGloss, KentHydroMattFinish, KentLuxuryEmulsion, KentWeatherCare } from "./shades/Kent Shades";
+import { KentHighGloss, KentHydroMattFinish, KentLuxuryEmulsion, KentMattFinish, KentWeatherCare } from "./shades/Kent Shades";
 
 
 export const products = [
