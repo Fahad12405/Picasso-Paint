@@ -73,11 +73,11 @@ function Contact() {
   return (
     <div className="p-4 sm:p-0 lg:p-0 bg-white">
       {/* Centered Big Heading */}
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-slate-900 mb-12">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-slate-900 mb-24">
         Contact Us
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto bg-white">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto bg-white">
 
         {/* Left Content */}
         <div>

@@ -68,9 +68,7 @@ const AboutUs = () => {
                     </svg>
                     Paint Brands:
                   </dt>
-                  <dd className="ml-1">
-                    Decorative Paints, Vehicle Refinish Paints, Industrial Finishes under “Evernew” & “Kent”
-                  </dd>
+                 
                 </div>
               </dl>
               <div className="mt-6 flex gap-4">

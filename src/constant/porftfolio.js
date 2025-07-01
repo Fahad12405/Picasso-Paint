@@ -4,6 +4,7 @@ import dressingImg from '../assets/project3.jpg';
 import diningImg from '../assets/project4.jpg';
 import bedroomImg from '../assets/project5.jpg';
 import officeImg from '../assets/project6.jpg';
+import Project8 from '../assets/project8.jpg';
 
 export const portfolioData = [
     {
@@ -15,15 +16,15 @@ export const portfolioData = [
         span: false,
     },
     {
-        title: 'Kitchen Area',
+        title: 'Super Gloss',
         image: kitchenImg,
         description:
-            'Kitchen modern space with a balance blend of style and functionality. Premium materials ensure comfort and style for your everyday needs.',
+            'Super gloss enamel is a top quality enamel made from the highest quality alkyd syntheic resin with carefully selected high-fast pigments which ensure mazimum color retention..',
         button: 'Continue Reading →',
         span: true, // This will make it span 2 columns
     },
     {
-        title: 'Dressing Area',
+        title: 'Matt Finish',
         image: dressingImg,
         description:
             'Organized and elegant dressing areas that combine space-saving features with luxury design.',
@@ -39,7 +40,7 @@ export const portfolioData = [
         span: false,
     },
     {
-        title: 'Bed Room',
+        title: 'Weather Care',
         image: bedroomImg,
         description:
             'Relaxing bedrooms designed to provide a serene atmosphere and restful sleep.',
@@ -47,18 +48,18 @@ export const portfolioData = [
         span: false,
     },
     {
-        title: 'Office',
+        title: 'Automative',
         image: officeImg,
         description:
-            'Professional office setups that promote productivity and creativity in a modern space.',
+            'Whether you are painting a car or any vehicle Picasso Auto Refinish provides access to a range of high quality products.',
         button: 'Continue Reading →',
         span: false,
     },
     {
-        title: 'Kitchen Area',
-        image: kitchenImg,
+        title: 'Accent Wall Highlight',
+        image: Project8,
         description:
-            'Kitchen modern space with a balance blend of style and functionality. Premium materials ensure comfort and style for your everyday needs.',
+            'Bring any room to life with bold and beautiful accent walls. Our paints offer stunning color depth and smooth finishes that add character to your space.',
         button: 'Continue Reading →',
         span: true, // This will make it span 2 columns
     }

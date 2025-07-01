@@ -5,7 +5,7 @@ function FAQ() {
   return (
     <section className="bg-white">
       <div className="py-0 px-4 mx-auto max-w-screen-xl sm:py-2 lg:px-6">
-        <h2 className="mb-8 text-4xl font-bold text-gray-900 text-center">
+        <h2 className="mb-20 text-4xl font-bold text-gray-900 text-center">
           Ask From Us
         </h2>
         <div className="pt-8 border-t border-gray-200 md:grid md:grid-cols-2 md:gap-8">

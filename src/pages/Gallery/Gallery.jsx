@@ -10,8 +10,9 @@ function Gallery() {
         <Projects />
 
       </div>
-
+<div className="mt-16">
       <Contact />
+      </div>
     </>
   )
 }
