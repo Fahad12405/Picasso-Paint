@@ -22,15 +22,24 @@ const ProductDetail = () => {
     // }
   }, [product, navigate]);
 
-  if (!product) return null;
+  if (!product) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-2xl font-semibold text-gray-500">Product not found</p>
+      </div>
+    )
+  }
 
   const otherProducts = products.filter((p) => p.id !== product.id);
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-20">
-      <button className="mb-8 px-1 py-2 pt-10 rounded" onClick={() => navigate("/AllColors")}>
-        ← Back to Products
-      </button>
+      <div className="flex items-center justify-between">
+        <button className="mb-8 px-1 py-2 pt-10 rounded" onClick={() => navigate("/AllColors")}>
+          ← Back to Products
+        </button>
+        <img className="h-24 w-24 mt-8" src={product?.image} />
+      </div>
 
       <WallPainter shades={product?.shades} />
 

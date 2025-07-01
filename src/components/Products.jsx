@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { productsGallon } from '../constant/products';
+import { products } from '../constant/products';
 
 const ProductSlider = () => {
   const scrollRef = React.useRef(null);
@@ -42,8 +42,8 @@ const ProductSlider = () => {
             ref={scrollRef}
             className="flex gap-3 sm:gap-4 w-full overflow-x-auto scroll-smooth no-scrollbar px-2 sm:px-4"
           >
-            {Array.from({ length: Math.ceil(productsGallon.length / 4) }, (_, i) => {
-              const chunk = productsGallon.slice(i * 4, i * 4 + 4);
+            {Array.from({ length: Math.ceil(products.length / 4) }, (_, i) => {
+              const chunk = products.slice(i * 4, i * 4 + 4);
               return (
                 <div
                   key={i}

@@ -78,7 +78,7 @@ export const products = [
     description:
       "This water-based primer and sealer enhances paint adhesion and ensures long-term protection against moisture and stains.",
     image: Product7,
-    shades: []
+    shades: KentHydroMattFinish
   },
   {
     id: 8,
@@ -114,7 +114,7 @@ export const products = [
     description:
       "This primer prepares walls for a smooth and uniform topcoat. It penetrates deeply and improves paint adhesion for lasting results.",
     image: Product11,
-    shades: []
+    shades: KentMattFinish
   },
   {
     id: 12,
