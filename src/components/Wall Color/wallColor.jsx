@@ -42,7 +42,7 @@ export default function Component({ shades = [] }) {
 
               {/* Color Swatches */}
               {shades.length > 0 ? (
-                <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-4">
+                <div className="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-4">
                   {shades.map((color, index) => (
                     <div key={index} className="flex flex-col items-center">
                       <button
