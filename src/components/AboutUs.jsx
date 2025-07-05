@@ -49,12 +49,14 @@ const AboutUs = () => {
                       viewBox="0 0 20 20"
                       className="absolute left-0 top-0 h-5 w-5 text-[#BB2429]"
                     >
-                      <path d="M4 3h12v2H4zM4 7h12v2H4zM4 11h8v2H4z" />
+                      <path d="M5 4h10v2H5V4zm0 4h10v2H5V8zm0 4h6v2H5v-2z" />
                     </svg>
-                    Products:
+                    Paint Brands:
                   </dt>
-                  <dd className="ml-1">Evernew-Paints & Varnish, Kent-Paints</dd>
+                  <dd className="ml-1">Picasso Evernew, Kent Paints , Toplac Paints , Decorative Paints, Ink Paints, Industrial Paints</dd>
+
                 </div>
+
 
                 <div className="relative pl-8">
                   <dt className="font-semibold text-gray-900">
@@ -64,12 +66,14 @@ const AboutUs = () => {
                       viewBox="0 0 20 20"
                       className="absolute left-0 top-0 h-5 w-5 text-[#BB2429]"
                     >
-                      <path d="M5 4h10v2H5V4zm0 4h10v2H5V8zm0 4h6v2H5v-2z" />
+                      <path d="M4 3h12v2H4zM4 7h12v2H4zM4 11h8v2H4z" />
                     </svg>
-                    Paint Brands:
+                    Products:
                   </dt>
-                 
+                  <dd className="ml-1">Emulsion, Acrylic Putty, Gloss Enamel, Matt Enamel, Hydro Matt, Primer Sealer, Luxury Emulsion, Red Oxide, Weather Care & more..</dd>
                 </div>
+
+               
               </dl>
               <div className="mt-6 flex gap-4">
                 <a

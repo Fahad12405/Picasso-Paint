@@ -71,7 +71,7 @@ function Contact() {
   }
 
   return (
-    <div className="p-4 sm:p-0 lg:p-0 bg-white">
+    <div className="p-4 sm:p-0 lg:p-0 bg-white mb-14">
       {/* Centered Big Heading */}
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-slate-900 mb-24">
         Contact Us

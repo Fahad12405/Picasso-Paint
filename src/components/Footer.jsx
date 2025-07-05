@@ -21,17 +21,11 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-white text-black py-20 px-6 sm:px-10 relative ">
+      <footer className="bg-white text-black py-4 px-6 sm:px-10 relative ">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
 
-          {/* Logo & About */}
-          <div className="space-y-12">
-            <img src={Logo} alt="Picasso Logo" className="w-72 h-24" />
-            <h3 className="text-lg font-semibold py-1">ABOUT OUR COMPANY</h3>
-            <p className="text-sm leading-relaxed text-gray-700">
-              The standard packages was established during 1984 as a offset tin printing and packaging manufacturing industry. Since then it has been engaged in the printing of tin plates and tin making business for large number of local and international customers example Paints, Ghee, chew tobacco manufacturing industries etc.
-            </p>
-          </div>
+    
+        
 
           {/* Quick Links */}
           <div className="space-y-8">
@@ -61,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 border-t pt-5 text-center text-sm text-gray-500">
+        <div className="mt-10 border-t pt-3 text-center text-sm text-gray-500">
           © 2023 All rights reserved. Designed by Picasso Paint Developers
         </div>
       </footer>
