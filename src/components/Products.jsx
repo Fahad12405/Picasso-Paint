@@ -54,17 +54,21 @@ const ProductSlider = () => {
               ? Array.from({ length: 10 }).map((_, idx) => (
                   <div
                     key={idx}
-                    className="w-[48%] sm:w-[20%] flex-shrink-0 bg-white p-3 rounded-lg animate-pulse shadow"
+                    className="w-[48%] sm:w-[20%] flex-shrink-0 bg-white p-3 rounded-lg "
                   >
-                    <div className="w-full h-[200px] sm:h-[260px] bg-gray-300 rounded-md"></div>
-                    <div className="h-3 w-2/3 bg-gray-300 rounded mt-2 mx-auto"></div>
+                    <div className="w-full h-[200px] sm:h-[240px] flex items-center justify-center bg-gray-200 animate-pulse rounded-md">
+                      <div className="w-16 h-16 bg-gray-300 rounded-full"></div>
+                    </div>
+                    <div className="mt-2 flex justify-center">
+                      <div className="h-2 w-2/3 bg-gray-300 rounded animate-pulse"></div>
+                    </div>
                   </div>
                 ))
               : products.map((product) => (
                   <div
                     key={product.id}
                     onClick={() => handleClick(product.name)}
-                    className="w-[48%] sm:w-[20%] flex-shrink-0 bg-white p-3 rounded-lg transition-all cursor-pointer transform hover:scale-105 duration-300 ease-in-out shadow"
+                    className="w-[48%] sm:w-[20%] flex-shrink-0 bg-white p-3 rounded-lg transition-all cursor-pointer transform hover:scale-105 duration-300 ease-in-out "
                   >
                     <div className="w-full h-[200px] sm:h-[260px] flex items-center justify-center bg-white">
                       <img
